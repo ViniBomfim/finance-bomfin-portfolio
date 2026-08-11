@@ -1,0 +1,11 @@
+# Notas locais (copie para help.txt — não versionado)
+
+## Backend (raiz do projeto)
+.\.venv\Scripts\python.exe -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000 --reload-exclude "tests/*" --reload-exclude "scripts/*"
+
+## Frontend
+cd frontend
+npm.cmd run dev
+
+## Usuário admin (crie via CLI, não grave senhas aqui)
+python -m app.cli.manage_user --help

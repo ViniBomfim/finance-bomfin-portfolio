@@ -1,0 +1,23 @@
+# Blueprint Render — API FastAPI + Supabase
+# https://render.com/docs/blueprint-spec
+#
+# 1. Conecte o repositório no Render → New → Blueprint
+# 2. Após criar o serviço, defina DATABASE_URL no painel (URI do Supabase)
+# 3. No Netlify: API_PROXY_TARGET = URL exata do serviço (ex. https://your-api.example.com)
+
+services:
+  - type: web
+    name: finance-bomfin-portfolio-api
+    runtime: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: SECRET_KEY
+        generateValue: true
+      - key: RUN_MIGRATIONS_ON_STARTUP
+        value: "false"

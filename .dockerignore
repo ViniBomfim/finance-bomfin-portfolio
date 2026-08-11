@@ -1,0 +1,31 @@
+# Frontend (deploy separado no Netlify)
+frontend/
+.netlify/
+
+# Python local / testes
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+tests/
+*.db
+*.sqlite
+*.sqlite3
+
+# Segredos e IDE
+.env
+.env.*
+!.env.example
+.git/
+.github/
+.idea/
+.vscode/
+*.md
+!README.md
+
+# Node (se existir na raiz)
+node_modules/

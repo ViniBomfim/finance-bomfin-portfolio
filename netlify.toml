@@ -1,0 +1,26 @@
+# Site: configure a URL pública no painel Netlify
+# API_PROXY_TARGET: defina no painel Netlify (recomendado) ou descomente abaixo.
+
+[build]
+  base = "frontend"
+  command = "npm ci && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+  # Descomente e coloque a URL real do FastAPI (ou use o painel Netlify):
+  # API_PROXY_TARGET = "https://sua-api.onrender.com"
+
+# Redirects SPA + proxy /api ficam em frontend/public/_redirects (gerado no build)
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
