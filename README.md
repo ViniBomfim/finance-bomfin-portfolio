@@ -1,8 +1,14 @@
 # BomFin — Portfolio (finance-bomfin-portfolio)
 
+**Repositório público:** [https://github.com/ViniBomfim/finance-bomfin-portfolio](https://github.com/ViniBomfim/finance-bomfin-portfolio)
+
 Versão pública e sanitizada do sistema de planejamento financeiro **BomFin**: API **FastAPI** + interface **React (Vite/TypeScript)**.
 
 Este repositório é destinado a portfólio. Dados pessoais, faturas reais, URLs de produção e segredos foram removidos ou substituídos por fixtures sintéticas.
+
+### Texto sugerido para o currículo
+
+> **BomFin / Finance Manager** — FastAPI + React: import de fatura (CSV/PDF), rateio, metas com pool, notificações e viagens. https://github.com/ViniBomfim/finance-bomfin-portfolio
 
 ## Destaques técnicos
 
