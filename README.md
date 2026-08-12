@@ -6,9 +6,6 @@ Versão pública e sanitizada do sistema de planejamento financeiro **BomFin**: 
 
 Este repositório é destinado a portfólio. Dados pessoais, faturas reais, URLs de produção e segredos foram removidos ou substituídos por fixtures sintéticas.
 
-### Texto sugerido para o currículo
-
-> **BomFin / Finance Manager** — FastAPI + React: import de fatura (CSV/PDF), rateio, metas com pool, notificações e viagens. https://github.com/ViniBomfim/finance-bomfin-portfolio
 
 ## Destaques técnicos
 
